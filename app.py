@@ -7,7 +7,7 @@ vectorizer = joblib.load("vectorizer.jb")
 model = joblib.load("lr_model.jb")
 
 # --- Streamlit UI Layout ---
-st.set_page_config(page_title="Fake News Generator & Detector", layout="centered")
+st.set_page_config(page_title="Automated Misinformation Analysis", layout="centered")
 
 st.markdown("<h1 style='color:#2e86de;'> Fake News Generator & Detector</h1>", unsafe_allow_html=True)
 st.markdown("Type or paste a news article below to check if it's real or fake.")
@@ -65,3 +65,4 @@ if st.button("🔍 Check News"):
                 st.markdown(f"[🔗 Read more on Wikipedia]({url})")
     else:
         st.warning("⚠️ Please enter some text first.")
+
